@@ -13,7 +13,7 @@ export default class PageSwitcher extends Component {
    }
 
    switchTo(nextIndex) {
-      const cs = this.refs;
+      const { cs  }= this.refs;
 
       const {
          index
