@@ -6,7 +6,7 @@ export default class App extends Component {
       super(props);
 
       this.state = {
-         index: 0
+         index: 1
       };
 
       this._onChange = this._onChange.bind(this);
@@ -27,12 +27,12 @@ export default class App extends Component {
    render() {
       return (
          <PageSwitcher
+            ref='ps'
             width={ 600 }
             height={ 600 }
             threshold={ 300 }
             onChange={ this._onChange }
             index={ this.state.index }
-            loop={ false }
             styleGenerator={ this._styleGenerator }
          >
             <div
